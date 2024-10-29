@@ -2,6 +2,9 @@
 # 1. Bankomat dasturi (input, if, else)
 #     • Foydalanuvchidan bank hisobiga kiritish yoki yechish miqdorini so'rang. Agar hisobda yetarli mablag' bo'lmasa, xato xabarini ko'rsating. Hisob qoldig'ini ekranga chiqaring.
 #     • Foydalanuvchidan pin-kod so'rab, to'g'ri kiritsa, "Xush kelibsiz" degan xabarni chiqaring. Aks holda, "Noto'g'ri pin-kod" deb chop eting.
+from pydoc import plain
+from traceback import print_tb
+
 
 # class Bankomat():
 #     """First assignment"""
@@ -122,7 +125,12 @@
     # • 5 xil turdagi mehmonxona xonalarini ro'yxat sifatida saqlang. Foydalanuvchidan xona turini kiriting va uni bron qiling. Agar xona band bo'lsa, boshqa xonalarni taklif eting.
     # • Foydalanuvchidan bir necha kechaga xona bron qilishni so'rang. Jami narxni hisoblang va ko'rsating. Agar narx 1 milliondan oshsa, 5% chegirma bering.
 
-
+# import datetime
+# class Date():
+#     def __init__(self, day, month, year):
+#         self.day = day
+#         self.month = month
+#         self.year = year
 # class Hotel():
 #     def __init__(self, **rooms):
 #         self.rooms = rooms
@@ -153,3 +161,66 @@
 #             text += f"\nYour shopping {cost}"
 #         return text
 
+
+
+
+# sixth task
+#6. Kutubxona tizimi (for, list, dictionary)
+    # • Kitoblar ro'yxati va ularning mavjud yoki yo'qligi haqida ma'lumotni lug'atda saqlang. Foydalanuvchidan kitob nomini so'rang va agar kitob mavjud bo'lsa, uni berib yuboring, aks holda boshqa kitoblarni taklif eting.
+    # • 5 ta kitob nomini va ularning mualliflarini ro'yxat sifatida saqlang. Foydalanuvchi qaysi muallifning kitoblarini so'rasa, unga shu muallifning kitoblarini ko'rsating.
+
+
+# class Library():
+#     def __init__(self, **books):
+#         self.books = books
+#
+#     def check_book(self, book):
+#         for author, books in self.books.items():
+#             if book in books:
+#                 books.remove(book)
+#                 return f"Book {book} is available"
+#             else:
+#                 return f"Book {book} is not available. Try another book: {', '.join(books)}"
+#
+#     def author_books(self, author):
+#         for author, books in self.books.items():
+#             if author == author:
+#                 return books
+#
+# kitob = Library( james_krill = ['Python','JavaScript', 'C#', 'C++', 'Java'])
+# print(kitob.author_books('james_krill'))
+
+
+
+
+# seventh task
+#7. Reja tuzuvchi dastur (while, input, list)
+    # • Foydalanuvchidan rejalari haqida ma'lumot kiritishni so'rang. U kiritgan har bir rejani ro'yxatga qo'shib boring va rejalari tugagandan so'ng, ro'yxatni chop eting.
+    # • Foydalanuvchi "chiqish" so'zini yozmaguncha, undan rejalarini kiritishni davom eting. Tugallangandan keyin barcha rejalarning umumiy ro'yxatini ko'rsating.
+
+
+# class Planner():
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def make_plan(self):
+#         n = 0
+#         plans = []
+#         while 1:
+#             n += 1
+#             plan = input(f'Enter your {n}-plan:(exit for exit) ')
+#             if plan == 'exit':
+#                 break
+#             else:
+#                 plans.append(plan)
+#                 continue
+#         return f"Your plans: {', '.join(plans)}"
+
+
+#eighth task
+#8. Valyuta konvertori (input, if, elif)
+    # • Foydalanuvchidan valyuta turi (USD, EUR, GBP) va summani kiriting. Kirilgan summani milliy valyutaga aylantiring. Har bir valyuta uchun turli kurslarni qo'llang.
+    # • Foydalanuvchi turli valyutalarda kirilgan summalarni konvertatsiya qilishni so'rasin va yakuniy narxlarni ko'rsating.
+
+
+# class Convertor():
